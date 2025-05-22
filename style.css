@@ -5,13 +5,11 @@
         padding: 0;
         box-sizing: border-box;
         border-radius: 12px;
-        background-color: #141712;
-        display: flex;
-        justify-items: center;
     }
 
     body {
-        height: 100vh;
+        background-color: #141712;
+        min-height: 100vh;
         width: 100vw;
         display: flex;
         flex-direction: column;
@@ -20,21 +18,28 @@
     }
 
     header {
+        width: 100%;
         display: grid;
+        place-items: center;
+        padding-top: 20px;
+    }
+
+    img {
+        height: 8rem;
     }
 
     h1 {
         gap: 12px;
-        display: flex;
         font-size: 2em;
-        justify-content: center;
-        align-items: center;
         font-family: 'Lilita One', sans-serif;
+        font-weight: 400;
         color: white;
         letter-spacing: 3px;
+        padding-top: 8px;
+        text-shadow: 0px 0px 10px #ACBA8F;
     }
 
-    h3{
+    h3 {
         color: #ACBA8F;
         font-family: 'Corben', sans serif;
         font-weight: 400;
@@ -42,74 +47,108 @@
         font-size: 1em;
     }
 
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+        gap: 30px;
+    }
+
+    h2 {
+        color: white;
+        font-size: 1.3em;
+        font-family: 'Lilita One', sans-serif;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .texto {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     span {
         color: white;
         font-family: 'Corben', sans serif;
+        text-align: center;
+        font-size: 0.8rem;
     }
 
     .fotos {
         position: relative;
-        box-shadow: 0px 0px 4px black;
-        cursor: pointer;
-        overflow: hidden;
         justify-content: center;
-        font-size: 15px;
-        display: grid;
         align-items: center;
-        justify-content: center;
     }
 
     .fotos:nth-child(1) {
-        grid-area: f1;
-        background-image: url();
+        background-image: url(./img/teste.webp);
         background-size: cover;
         background-position: center;
     }
 
-    .fotos:nth-child(2) {
-        grid-area: f2;
-        background-image: url();
+    #foto2 {
+        background-image: url(./img/foto2.png);
         background-size: cover;
         background-position: center;
     }
 
-    .fotos:nth-child(3) {
-        grid-area: f3;
-        background-image: url();
+    .foto-info {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        align-items: center;
+    }
+
+    #foto3 {
+        background-image: url(./img/foto3.png);
         background-size: cover;
         background-position: center;
     }
 
-    .fotos:nth-child(4) {
-        grid-area: f4;
-        background-image: url();
+    #strong{
+        color: #ACBA8F;
+    }
+
+    ul {
+        list-style-type: disc;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-left: 20px;
+        text-align: left;
+        font-family: 'Corben', sans-serif;
+        font-size: 0.8rem;
+    }
+
+
+    #foto4 {
+        background-image: url(./img/foto4.png);
         background-size: cover;
-        background-position: top;
+        background-position: center;
     }
 
     .fotos:nth-child(5) {
-        grid-area: f5;
         background-image: url();
         background-size: cover;
         background-position: center;
     }
 
     .fotos:nth-child(6) {
-        grid-area: f6;
         background-image: url();
         background-size: cover;
         background-position: center;
     }
 
     .fotos:nth-child(7) {
-        grid-area: f7;
         background-image: url();
         background-size: cover;
         background-position: center;
     }
 
     .fotos:nth-child(8) {
-        grid-area: f8;
         background-image: url();
         background-size: cover;
         background-position: center;
