@@ -9,8 +9,6 @@ body {
     position: relative;
     background-color: #141712;
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
     padding-left: 12px;
     padding-right: 12px;
 }
@@ -85,6 +83,9 @@ header {
 }
 
 .texto {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
     color: white;
     text-align: center;
     padding-top: 8px;
@@ -94,7 +95,22 @@ img {
     height: 8rem;
 }
 
-h1 {
+.foto-grupo {
+    object-fit: cover;
+    height: 40vh;
+    width: 70%;
+    padding: 5px;
+}
+
+h1{
+    font-size: 2em;
+    font-family: 'Lilita One', sans-serif;
+    font-weight: 400;
+    color: white;
+    letter-spacing: 3px;
+}
+
+.titulo-principal{
     gap: 12px;
     font-size: 2em;
     font-family: 'Lilita One', sans-serif;
@@ -114,9 +130,9 @@ h3 {
 }
 
 main {
-    height: fit-content;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
     padding: 10px;
     gap: 30px;
@@ -130,12 +146,6 @@ h2 {
     text-align: center;
 }
 
-.texto {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 p {
     color: white;
     font-family: 'Corben', sans serif;
@@ -144,6 +154,8 @@ p {
 }
 
 .fotos {
+    height: 30vh;
+    width: 100%;
     position: relative;
     justify-content: center;
     align-items: center;
@@ -155,33 +167,32 @@ a {
     justify-content: center;
 }
 
-.foto-grupo {
-    object-fit: cover;
-    height: 40vh;
-    width: 70%;
-}
-
 #foto2 {
-    background-image: url(./img/foto2.png);
+    background-image: url(../img/foto2-sobreNos.png);
     background-size: cover;
     background-position: center;
 }
+
+.dois{
+    padding-top: 4px;
+}
+
 
 .foto-info {
     display: flex;
     flex-direction: column;
-    gap: 3px;
+    gap: 2px;
     align-items: center;
 }
 
-#foto3 {
-    background-image: url(./img/foto3.png);
-    background-size: cover;
-    background-position: center;
+.destaque{
+    color: #ACBA8F;
 }
 
-#strong {
-    color: #ACBA8F;
+#foto3 {
+    background-image: url(../img/foto3-sobreNos.png);
+    background-size: cover;
+    background-position: center;
 }
 
 ul {
@@ -198,7 +209,13 @@ ul {
 
 
 #foto4 {
-    background-image: url(./img/foto4.png);
+    background-image: url(../img/foto4-sobreNos.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#foto5{
+    background-image: url(../img/foto5-sobreNos.png);
     background-size: cover;
     background-position: center;
 }
@@ -226,23 +243,6 @@ footer {
 
 #insta {
     height: 40px;
-}
-
-@media (max-width:768px) {
-    body {
-        padding-left: 12px;
-        padding-right: 12px;
-    }
-
-    .galeria {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .fotos {
-        width: 100%;
-        height: 33vh;
-    }
 }
 
 @keyframes aparecerHeader {

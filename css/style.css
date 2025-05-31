@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-radius: 12px;
+}
+
+body {
+    position: relative;
+    background-color: #141712;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.header-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+.header-visivel {
+    z-index: 100;
+    display: flex !important;
+    animation: aparecerHeader 0.5s ease-in-out forwards;
+}
+
+.header-flutuante {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    font-size: 0.5em;
+    padding: 0.5rem 0.7rem;
+    gap: 0.6rem;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(-20px);
+    opacity: 0;
+    background-color: #141712;
+    box-shadow: 0 4px 8px -4px #ACBA8F;
+}
+
+.header-flutuante .arvore {
+    width: 13vw;
+    height: 13vw;
+}
+
+.header-flutuante .titulo-subtitulo {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.arvore {
+    display: flex;
+    background-color: white;
+    border-radius: 100%;
+    width: 40vw;
+    height: 40vw;
+    flex-shrink: 0;
+}
+
+.titulo {
+    color: #cfccb0;
+    font-weight: 600;
+}
+
+.subtitulo {
+    color: #bdc1b4;
+    font-family: 'Corben', sans serif;
+    font-size: 1.6em;
+}
+
+.texto {
+    color: white;
+    text-align: center;
+    padding-top: 8px;
+}
+
+img {
+    height: 8rem;
+}
+
+h1 {
+    gap: 12px;
+    font-size: 2em;
+    font-family: 'Lilita One', sans-serif;
+    font-weight: 400;
+    color: white;
+    letter-spacing: 3px;
+    padding-top: 8px;
+    text-shadow: 0px 0px 10px #ACBA8F;
+}
+
+h3 {
+    color: #ACBA8F;
+    font-family: 'Corben', sans serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 1em;
+}
+
+main {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    gap: 30px;
+}
+
+h2 {
+    color: white;
+    font-size: 1.3em;
+    font-family: 'Lilita One', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+.texto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    color: white;
+    font-family: 'Corben', sans serif;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.fotos {
+    height: auto;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foto-grupo {
+    object-fit: cover;
+    height: 40vh;
+    width: 70%;
+}
+
+#foto2 {
+    background-image: url(../img/foto2.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.foto-info {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    align-items: center;
+}
+
+#foto3 {
+    background-image: url(../img/foto3.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#strong {
+    color: #ACBA8F;
+}
+
+ul {
+    list-style-type: disc;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 20px;
+    text-align: left;
+    font-family: 'Corben', sans-serif;
+    font-size: 0.8rem;
+}
+
+
+#foto4 {
+    background-image: url(../img/foto4.png);
+    background-size: cover;
+    background-position: center;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 14vh;
+}
+
+.insta-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.social-link{
+    display: flex;
+    width: 30px;
+    height: 30px;
+}
+
+#insta {
+    height: 40px;
+}
+
+@media (max-width:768px) {
+    body {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .galeria {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fotos {
+        width: 100%;
+        height: 33vh;
+    }
+}
+
+@keyframes aparecerHeader {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
